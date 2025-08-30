@@ -1,0 +1,10 @@
+BasedOnStyle: Microsoft
+IndentWidth: 4
+TabWidth: 4
+AccessModifierOffset: -4
+# UseTab: Never
+BreakBeforeBraces: Attach
+# AllowShortFunctionsOnASingleLine: Inline
+# ColumnLimit: 120
+# SortIncludes: CaseSensitive
+

@@ -1,0 +1,7 @@
+# Ignore all compiled executables
+*.out
+*.exe
+*.bin
+*.dll
+*.so
+*.dylib
