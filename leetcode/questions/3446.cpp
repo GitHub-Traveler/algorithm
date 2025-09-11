@@ -2,9 +2,9 @@
 #include <vector>
 using namespace std;
 
-class Solution {
+class solution {
 public:
-    vector<vector<int>> sortMatrix(vector<vector<int>> &grid) {
+    vector<vector<int>> sortmatrix(vector<vector<int>> &grid) {
         int n = grid.size();
         vector<vector<int>> result(n, vector<int>(n));
         for (int i = 0; i < 2 * n - 1; i++) {
@@ -36,8 +36,8 @@ public:
 };
 
 int main(int argc, char *argv[]) {
-    Solution s;
+    solution s;
     vector<vector<int>> nums = {{2, 2, 1, 2, 2}, {2, 0, 2, 2, 0}, {2, 0, 1, 1, 0}, {1, 0, 2, 2, 2}, {2, 0, 0, 2, 2}};
-    vector<vector<int>> result = s.sortMatrix(nums);
+    vector<vector<int>> result = s.sortmatrix(nums);
     return 0;
 }

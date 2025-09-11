@@ -1,0 +1,48 @@
+# .clangd configuration file
+CompileFlags:
+  # Add extra flags to compilation commands
+  Add:
+    - "-std=c++20"
+    - "-Wall"
+    - "-Wextra"
+  # Remove flags from compilation commands
+  Remove:
+    - "-fno-rtti"
+    - "-march=*"
+  # Compiler to use (overrides compile_commands.json)
+  Compiler: clang++
+
+Index:
+  # Background indexing priority (Low, Normal, High)
+  Background: Build
+  # Paths to exclude from indexing
+  StandardLibrary: Yes
+
+Diagnostics:
+  # Suppress specific warnings
+  Suppress:
+    - "unused-parameter"
+    - "missing-prototypes"
+  # ClangTidy checks to enable/disable
+  ClangTidy:
+    Add:
+      # - "readability-*"
+      - "modernize-*"
+    Remove:
+      - "modernize-use-trailing-return-type"
+  # Include cleaner suggestions
+  Includes:
+    IgnoreHeader:
+      - ".*\\.hpp"
+  # Unused includes analysis
+  UnusedIncludes: Strict
+
+InlayHints:
+  # Show deduced types
+  DeducedTypes: Yes
+  # Show designated initializers
+  Designators: Yes
+
+Hover:
+  # Show value for simple expressions
+  ShowAKA: Yes
