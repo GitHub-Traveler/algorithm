@@ -2,7 +2,7 @@
 CompileFlags:
   # Add extra flags to compilation commands
   Add:
-    - "-std=c++20"
+    - "-std=c++17"
     - "-Wall"
     - "-Wextra"
   # Remove flags from compilation commands
